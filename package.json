@@ -1,0 +1,27 @@
+{
+  "name": "zoroglu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "author": "Kochanenes",
+  "license": "ISC",
+  "dependencies": {
+    "bot.js": "0.0.1",
+    "catch": "^1.0.48",
+    "chalk": "^2.4.2",
+    "common-tags": "^1.8.0",
+    "db": "^1.1.1",
+    "discord.js": "^11.4.2",
+    "index.js": "0.0.3",
+    "jimp": "^0.6.0",
+    "loader.js": "^4.7.0",
+    "moment": "^2.24.0",
+    "ms": "^2.1.1",
+    "src": "^1.1.2",
+    "weather-js": "^2.0.0",
+    "weather.js": "^0.1.0"
+  }
+}
