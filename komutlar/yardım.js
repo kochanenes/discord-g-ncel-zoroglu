@@ -8,7 +8,7 @@ exports.run = (client, message, params) => {
   .setTitle("Komutlar")
   .setDescription('')
   .setColor(0x00ffff)
-  .addField("**Eğlence ve Kullanıcı Komutları:**", `!balıktut = balıktutarsınız \!çayiç = çay içersiniz... \!bilgi = Benim Hakkımda Bilgi Verir... \!efkar-vs = 2 kullanıcı etiketleyip hangisi daha efkarlı test eder... \!hacked = Profil resminize Hacked yazısını ekler... \!kralol = Kral Olursunuz... \!öldür = Etiketlediğiniz Kişiyi Öldürür... \!tokat = etiketlediğiniz kişiye tokat atar... `)
+  .addField("**Eğlence ve Kullanıcı Komutları:**", `!balıktut = balıktutarsınız \!çayiç = çay içersiniz... \!roliste = rol verir :D yada oyle sanarsın :D \!bilgi = Benim Hakkımda Bilgi Verir... \!efkar-vs = 2 kullanıcı etiketleyip hangisi daha efkarlı test eder... \!hacked = Profil resminize Hacked yazısını ekler... \!kralol = Kral Olursunuz... \!öldür = Etiketlediğiniz Kişiyi Öldürür... \!tokat = etiketlediğiniz kişiye tokat atar... `)
   .addField("**Discord Sunucu İle İlgili Komutlar :**",'!davet = Davet Linkini Verir... \!Kanal = Kanal Linkine Ulaşırsınız... \!hazarkanal = Hazar ın Kanalının Linkini Verir... \!Müslümkanal = Müslüm ün Kanal Linkini Verir...')
 
   .addField("**Yapımcı**", " **Enes Reis** ")
