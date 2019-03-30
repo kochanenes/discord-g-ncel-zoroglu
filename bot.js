@@ -185,7 +185,21 @@ client.on('message', message => {
          }
  });
 
-
+client.on("guildMemberAdd", member => {
+	
+	var channel = member.guild.channels.find("name", "gєℓєη-gι∂єη");
+	if (!channel) return;
+	
+	var role = member.guild.roles.find("name", "Üye");
+	if (!role) return;
+	
+	member.addRole(role); 
+	
+	channel.send(member + " artık " + role + " rolü ile aramızda");
+	
+	member.send("Aramıza hoş geldin! Artık @üye rolüne sahipsin!")
+	
+});
 
 client.on('guildBanAdd' , (guild, user) => {
   let aramızakatılanlar = guild.channels.find('name', 'aramıza-katılanlar');
