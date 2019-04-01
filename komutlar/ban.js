@@ -25,7 +25,7 @@ exports.run = (client, message, args) => {
     .setTimestamp()
     .addField('Eylem:', 'Ban')
     .addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
-    .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}#${message.author.id !== '431438124347031552'}`)
+    .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
     .addField('Sebep', reason);
   return guild.channels.get(giris-cıkıs.id).sendEmbed(embed);
 };
@@ -38,7 +38,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'ban',
+  name: 'bann',
   description: 'İstediğiniz kişiyi banlar.',
-  usage: 'ban [kullanıcı] [sebep]'
+  usage: 'bann [kullanıcı] [sebep]'
 };
