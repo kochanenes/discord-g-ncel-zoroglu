@@ -11,13 +11,14 @@ errors: ['time'],
 })
 
 .then((collected) => {
-
-        message.guild.createChannel(`Muhammed`);
-        message.guild.createChannel(`Enes`);
-        message.guild.createChannel(`Koçhan`);
-        message.guild.createChannel(`Hacked`);
-        message.guild.createChannel(`Sunucu`);
-        message.guild.createChannel(`Hacked`);
+        message.guild.createChannel(`Duyurular`);
+          message.guild.createChannel(`Kurallar`);
+        message.guild.createChannel(`Sohbet`);
+        message.guild.createChannel(`Resim`);
+        message.guild.createChannel(`Rank_Sorgulama`);
+        message.guild.createChannel(`Link-Paylaşım-Odası`);
+        message.guild.createChannel(`Bot-Komut-Odası`);
+        
       
        message.guild.deleteChannel();
         message.channel.send(`Odaları Oluşturdum Yetkileri Sen Ayarlarsın Başka İşim Varmı Reis...?`);
