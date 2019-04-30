@@ -197,7 +197,7 @@ client.on("guildMemberAdd", member => {
 	
 	channel.send(member + " **artık** " + role + " **rolü ile aramızda**");
 	
-	member.send("** hoş geldin! Artık @•『⚠』• Zaitçi Tayfa rolüne sahipsin!**")
+	member.send("** Hoş Geldin! Artık @•『⚠』• Zaitçi Tayfa rolüne sahipsin!**")
 	
 });
 
