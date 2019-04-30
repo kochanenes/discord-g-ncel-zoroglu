@@ -187,10 +187,10 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", member => {
 	
-	var channel = member.guild.channels.find("name", "gєℓєη-gι∂єη");
+	var channel = member.guild.channels.find("name", "「🍂」ɢeleɴ-ɢιdeɴ");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "Üye");
+	var role = member.guild.roles.find("name", "•『⚠』• Zaitçi Tayfa");
 	if (!role) return;
 	
 	member.addRole(role); 
