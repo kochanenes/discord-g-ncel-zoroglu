@@ -15,9 +15,9 @@ exports.run = async (client, message) => {
         dönme.edit({
             embed: {
                 color: 0x00AE86,
-                description: `${message.author.tag}, **Buyrun Rolünüz**`,
+                description: `${message.author.tag}, **Kusura Bakma Kardeşim Rol Veremem Hak Etmen Lazım**`,
                 image: {
-                    url: "https://image.spreadshirtmedia.com/image-server/v1/mp/designs/13174048,width=178,height=178/middle-finger-bitmap-deluxe-fuck-you-fock-you.png"
+                    url: "https://tenor.com/view/milkandmocha-cry-sad-tears-upset-gif-11667710"
                 }
             }
         });
