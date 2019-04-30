@@ -202,7 +202,7 @@ client.on("guildMemberAdd", member => {
 });
 
 client.on('guildBanAdd' , (guild, user) => {
-  let aramızakatılanlar = guild.channels.find('name', 'aramıza-katılanlar');
+  let aramızakatılanlar = guild.channels.find('name', '「🍂」ɢeleɴ-ɢιdeɴ"');
   if (!aramızakatılanlar) return;
   aramızakatılanlar.send('https://media.giphy.com/media/8njotXALXXNrW/giphy.gif **Adalet dağıtma zamanı gelmiş!** '+ user.username +'**Bakıyorum da suç işlemiş,Yargı dağıtmaya devam** :fist: :writing_hand:  :spy:' );
 });
