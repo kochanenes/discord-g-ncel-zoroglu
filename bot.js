@@ -237,6 +237,7 @@ client.unload = command => {
       reject(e);
     }
   });
+	};
 
 
 
