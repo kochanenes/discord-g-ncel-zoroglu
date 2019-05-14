@@ -1,34 +1,17 @@
-const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+client.on('message', message => {
+    if (message.content === prefix + "sunucubilgi") {
+        const embed = new Discord.RichEmbed()
+            .addField ("Sunucu Adı", message.guild.name, true)
+            
+            .addField ("Sunucu ID", message.guild.id, true)
+            .addField ("Sunucu Sahibi", message.guild.owner)
+            .addField ("Toplam Üye Sayısı", message.guild.memberCount)
+            .setFooter("Olusturma Tarihi " + message.guild.createdAt)
+            .setColor(0x000001)
+        return message.channel.sendEmbed(embed)
+    }   
+});
 
-exports.run = (client, message, params) => {
-    if (!message.guild) {
-    const ozelmesajuyari = new Discord.RichEmbed()
-    .setColor(0xFF0000)
-    .setTimestamp()
-    .setAuthor(message.author.username, message.author.avatarURL)
-    .addField('**Eğlence Komutları Özel Mesajlarda Kullanılamaz!**')
-    return message.author.sendEmbed(ozelmesajuyari); }
-    if (message.channel.type !== 'dm') {
-      const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor(message.author.username +  ' Simit Yedin!')
-    .setColor(3447003)
-    .setTimestamp()
-    .setDescription('')
-        .setImage(`https://www.bobiler.org/monte/preview/116199/bobiler.gif`)
-    return message.channel.sendEmbed(sunucubilgi);
-    }
-};
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
-};
 
-exports.help = {
-  name: 'simit',
-  description: 'Simit Yer.',
-  usage: 'simit'
-};
+
