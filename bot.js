@@ -238,27 +238,29 @@ client.unload = command => {
     }
   });
 };
+client.on('message', message => {
+    if (message.content === prefix + "sunucubilgi") {
+        const embed = new Discord.RichEmbed()
+            .addField ("Sunucu Adı", message.guild.name, true)
+            
+            .addField ("Sunucu ID", message.guild.id, true)
+            .addField ("Sunucu Sahibi", message.guild.owner)
+            .addField ("Toplam Üye Sayısı", message.guild.memberCount)
+            .setFooter("Olusturma Tarihi " + message.guild.createdAt)
+            .setColor(0x000001)
+        return message.channel.sendEmbed(embed)
+    }   
+});
 
 
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === '!müslümkanal') {
-       msg.delete(30)
-        msg.reply('__**Müslüm ün Youtube Kanal Linki = **__ https://www.youtube.com/channel/UCtlBqFl5Bn0lyeCQ2bIkn3w');
-      }
-    });﻿
-
+   
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!davet') {
        msg.delete(30)
-        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/FtABxyK __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
+        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/B8PCZNS __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
     });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === '!hazarkanal') {
-       msg.delete(30)
-        msg.reply('__**Hazar ın Youtube Kanal Linki = **__ https://www.youtube.com/channel/UCN-NwDYX_SY1TXDxI3bBX6Q');
-      }
-    });﻿
+   
 
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!kanal') {
