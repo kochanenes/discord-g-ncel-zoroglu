@@ -239,7 +239,11 @@ client.unload = command => {
   });
 	};
 
-
+client.on('message', msg => {
+	if (msg.content.toLowerCase() === prefix + 'ping') {
+		message.channel.send{'**Pinginiz = **'+client.ping+'**ms**'};
+	}});
+		
 
    
     client.on('message', msg => {
