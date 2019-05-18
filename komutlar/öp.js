@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
     const oldur=new Discord.RichEmbed()
     .setColor("0x808080")
     .setDescription(message.author.username + ` ${user}` + ' adlı kişiyi, Öpücükledi! :hearts: ')
-    .setImage('https://media1.tenor.com/images/22d4bc30f194005e82af8576b79a7ba9/tenor.gif?itemid=6280005')
+    .setImage('https://media1.tenor.com/images/e0dd69d21b9e8c977b2c6c941d28d36f/tenor.gif?itemid=4421428')
     .setFooter("Enes İyi Eğlenceler Diler...", client.user.avatarURL)
      return message.channel.send(oldur);
 
