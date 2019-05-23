@@ -479,17 +479,6 @@ client.on('message', msg => {
 
 
 
-client.on('message', msg =>{
-if (!msg.content.startsWith(prefix)) {
-  return;
-}
-
-if (msg.content.toLowerCase() === prefix+'adam'){
-  msg.reply('Sunucudaki Adam Gibi Adam Sergen Zorogludur...')
-}
-});
-
-client.login('NTQ0MjIxMzU0NzE1Nzc1MDEx.D0dPHg.zrtd4Pzk62dDqP1lfbmt2UsVVSM');
 
 
 client.elevation = message => {
