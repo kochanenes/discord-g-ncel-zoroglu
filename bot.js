@@ -454,23 +454,7 @@ if (msg.content === 'BY BY ') {
 });
 
 
-client.on('message', msg => {
-if (msg.content === 'Müslüm') {
-    msg.reply('__**Biri Tutuberemi Seslendi ? https://tenor.com/view/what-wat-wat-lady-confused-huh-gif-8314795**__');
-}
-});
 
-client.on('message', msg => {
-if (msg.content === 'müslüm') {
-    msg.reply('__**Biri Tutuberemi Seslendi ? https://tenor.com/view/what-wat-wat-lady-confused-huh-gif-8314795**__');
-}
-});
-
-client.on('message', msg => {
-if (msg.content === 'MÜSLÜM') {
-    msg.reply('__**Biri Tutuberemi Seslendi ? https://tenor.com/view/what-wat-wat-lady-confused-huh-gif-8314795**__');
-}
-});
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '!rol') {
       msg.reply('**10 Level  Altın Üye \n\n 15 Level  Elmas Üye \n\n 30 Level  Zümrüt Üye \n\n 50 Level Zaitçi Tayfa \n\n Rank Atlamak için sunucumuzda zaman geçirmeniz gerekmektedir. #「:speech_balloon:」sohbet  de mesaj yazarak geçirdiğiniz her dakika için belirli XP (tecrübe puanı) kazanırsınız. Belirli XPye ulaştığınızda otomatik olarak rank atlarsınız. \n\n Rankınızı #「💬」rank-sorgulama odasında ** __**!rank**__ **yazarak öğrenebilirsiniz**');
