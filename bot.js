@@ -201,26 +201,7 @@ client.on("guildMemberAdd", member => {
 	
 });
 
-client.on('guildMemberAdd' , (guild, user) => {
-  let aramızakatılanlar = guild.channels.find('name', 'giriş-çıkış"');
-  if (!aramızakatılanlar) return;
-  aramızakatılanlar.send('https://media.giphy.com/media/8njotXALXXNrW/giphy.gif **Adalet dağıtma zamanı gelmiş!** '+ user.username +'**Bakıyorum da suç işlemiş,Yargı dağıtmaya devam** :fist: :writing_hand:  :spy:' );
-});
 
-client.load = command => {
-  return new Promise((resolve, reject) => {
-    try {
-      let cmd = require(`./komutlar/${command}`);
-      client.commands.set(command, cmd);
-      cmd.conf.aliases.forEach(alias => {
-        client.aliases.set(alias, cmd.help.name);
-      });
-      resolve();
-    } catch (e){
-      reject(e);
-    }
-  });
-};
 
 
 client.unload = command => {
