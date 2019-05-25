@@ -187,17 +187,17 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", member => {
 	
-	var channel = member.guild.channels.find("name", "「🍂」ɢeleɴ-ɢιdeɴ");
+	var channel = member.guild.channels.find("name", "giriş-çıkış");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "•『⚠』• Zaitçi Tayfa");
+	var role = member.guild.roles.find("name", "Üye");
 	if (!role) return;
 	
 	member.addRole(role); 
 	
 	channel.send(member + " **artık** " + role + " **rolü ile aramızda**");
 	
-	member.send("** Hoş Geldin! Artık @•『⚠』• Zaitçi Tayfa rolüne sahipsin!**")
+	member.send("** Hoş Geldin! Artık Üye  rolüne sahipsin!**")
 	
 });
 
