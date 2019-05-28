@@ -14,11 +14,12 @@ exports.run = (client, message, args) => {
   let user = message.mentions.users.first();
   let modlog = guild.channels.find('name', 'gelen-giden');
   if (!modlog) return message.reply('`giris-cıkıs` kanalını bulamıyorum.');
-  if (reason.length < 1) return message.reply('Ban sebebini yazmalısın.');
-  if (message.mentions.users.size < 1) return message.reply('Kimi banlayacağını yazmalısın.').catch(console.error);
+    if (message.mentions.users.size < 1) return message.reply('Kimi banlayacağını yazmalısın.').catch(console.error);
   user = permLevel (1);
   if (!message.guild.member(user).bannable) return message.reply('Yetkilileri banlayamam.');
   message.guild.ban(user, 1);
+  if (reason.length < 1) return message.reply('Ban sebebini yazmalısın.');
+
   var sahip = ayarlar.sahip;
   const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
