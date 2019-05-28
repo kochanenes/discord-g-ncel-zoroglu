@@ -227,7 +227,7 @@ client.unload = command => {
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!davet') {
        msg.delete(30)
-        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/B8PCZNS __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
+        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
     });﻿
    
