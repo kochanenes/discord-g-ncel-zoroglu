@@ -187,7 +187,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", member => {
 	
-	var channel = member.guild.channels.find("name", "gelen-giden");
+	var channel = member.guild.channels.find("name", "📥│gelen-giden ");
 	if (!channel) return;
 	
 	var role = member.guild.roles.find("name", "ÜYE");
@@ -227,18 +227,12 @@ client.unload = command => {
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!davet') {
        msg.delete(30)
-        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
+        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/RbKnebw __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
     });﻿
    
 
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === '!kanal') {
-       msg.delete(30)
-        msg.reply('**Kanal Linki** = https://www.youtube.com/channel/UCTBrraG-rHWYt0KGs_2dKKg __**Abone Olup Like Atmayı Unutma :heart: **__');
-      }
-    });﻿
-
+  
     client.on('message', msg => {
       if (msg.content.toLowerCase() === 'amk') {
        msg.delete(30)
@@ -360,21 +354,7 @@ client.on('message', msg => {
       msg.reply('Aleyküm Selam ');
 }
 });
-client.on('message', msg => {
-if (msg.content === 'Sergen abi') {
-    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
-}
-});
-client.on('message', msg => {
-if (msg.content === 'sergen abi') {
-    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
-}
-});
-client.on('message', msg => {
-if (msg.content === 'Sergen Abi') {
-    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
-}
-});
+
 
 client.on('message', msg => {
 if (msg.content === 'Enes abi') {
