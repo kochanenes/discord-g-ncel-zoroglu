@@ -227,11 +227,17 @@ client.unload = command => {
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!davet') {
        msg.delete(30)
-        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/RbKnebw __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
+        msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
+      }
+    });﻿
+  client.on('message', msg => {
+      if (msg.content.toLowerCase() === 'sergen abi') {
+       msg.delete(30)
+        msg.reply('__**Sergen Zoroglu Şuan Müsait Değil Daha Sonra Yaz...**__');
       }
     });﻿
    
-
+ 
   
     client.on('message', msg => {
       if (msg.content.toLowerCase() === 'amk') {
