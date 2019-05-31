@@ -187,7 +187,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", member => {
 	
-	var channel = member.guild.channels.find("name", "📥│gelen-giden ");
+	var channel = member.guild.channels.find("name", "gelen-giden");
 	if (!channel) return;
 	
 	var role = member.guild.roles.find("name", "ÜYE");
@@ -226,13 +226,13 @@ client.unload = command => {
    
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '!davet') {
-       msg.delete(30)
+      
         msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
     });﻿
   client.on('message', msg => {
       if (msg.content.toLowerCase() === 'sergen abi') {
-       msg.delete(30)
+      
         msg.reply('__**Sergen Zoroglu Şuan Müsait Değil Daha Sonra Yaz...**__');
       }
     });﻿
