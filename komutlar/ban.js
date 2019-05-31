@@ -12,14 +12,14 @@ exports.run = (client, message, args) => {
   let guild = message.guild
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
-  let modlog = guild.channels.find('name', 'gelen-giden');
-  if (!modlog) return message.reply('`gelen-giden` kanalını bulamıyorum.');
+  let modlog = guild.channels.find('name', 'mod-log');
+  if (!modlog) return message.reply('`mod-log` kanalını bulamıyorum.');
   if (reason.length < 1) return message.reply('Ban sebebini yazmalısın.');
   if (message.mentions.users.size < 1) return message.reply('Kimi banlayacağını yazmalısın.').catch(console.error);
 
   if (!message.guild.member(user).bannable) return message.reply('Yetkilileri banlayamam.');
   message.guild.ban(user, 2);
-  message.delete();
+
   const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
@@ -27,7 +27,7 @@ exports.run = (client, message, args) => {
     .addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
     .addField('Sebep', reason);
-  
+  return guild.channels.get(modlog.id).sendEmbed(embed);
 };
 
 exports.conf = {
@@ -38,7 +38,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'bann',
+  name: 'ban',
   description: 'İstediğiniz kişiyi banlar.',
   usage: 'ban [kullanıcı] [sebep]'
 };
