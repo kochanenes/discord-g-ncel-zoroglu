@@ -217,7 +217,7 @@ client.on('message', message => {
  });
 client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renkpembe') {  // İstediğiniz Komut
-        msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+        msg.member.addRole("584377724278276108") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Pembe Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
