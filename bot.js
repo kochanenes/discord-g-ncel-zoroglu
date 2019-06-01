@@ -186,8 +186,8 @@ client.on('message', message => {
  });
 
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === 'sarı') {  // İstediğiniz Komut
-        msg.member.addRole("584373924775854091") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+   if (msg.content.toLowerCase() === '!renksarı') {  // İstediğiniz Komut
+        msg.member.addRole("584373674514317333") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
    }
  });
