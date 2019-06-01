@@ -185,6 +185,23 @@ client.on('message', message => {
          }
  });
 
+ const activities_list = [
+     "!yardım", 
+     "Sergen Zorogluna Abone Olun", 
+     "!davet yazarak davet linki alabilirsiniz...", 
+     "DETSU Klan ALımlarımız Oldumu Bilgilendirileceksiniz...",
+     "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
+     ];
+
+ client.on('ready', () => {
+     setInterval(() => {
+         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // Bu Kısımları Ellemeyin
+         client.user.setActivity(activities_list[index]); // Bu Kısımları Ellemeyin.
+     }, 60000); // Selam 1 Saniye = 1000 MiliSaniye Yapar - Kısacası Böyle Bırakırsan - 3 Saniyede 1 Değişir.
+ });
+
+
+
 client.on("guildMemberAdd", member => {
 	
 	var channel = member.guild.channels.find("name", "gelen-giden");
