@@ -5,10 +5,9 @@ exports.run = function(client, message, args) {
     let type = args.slice(0).join(' ');
     if (type.length < 1) return message.channel.send(
 new Discord.RichEmbed()
-.setDescription('Kullanım: h!sikayet <Şikayet>'));
+.setDescription('Kullanım: /sikayet <Şikayet>'));
 const embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-
 .setDescription('Şikayetiniz Bildirildi!')
 message.delete();
 message.channel.send(embed)
