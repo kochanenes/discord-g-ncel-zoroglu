@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
 
 Jimp.read(user.avatarURL, (err, image) => {
     image.resize(315, 310)
-    Jimp.read("https://i.hizliresim.com/gPzGq3.jpg", (err, avatar) => {
+    Jimp.read("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrevTbtXe93ry4I2SMuRUUqsmxJ8_ZfAae2_3mI_fOGou2fS59kg", (err, avatar) => {
         avatar.resize(315, 320)
         image.composite(avatar, 0, 0).write(`./img/snip/${client.user.id}-${user.id}.png`);
         setTimeout(function() {
