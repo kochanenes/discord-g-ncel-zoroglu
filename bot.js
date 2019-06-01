@@ -186,46 +186,46 @@ client.on('message', message => {
  });
 
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renksarı') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renksarı') {  // İstediğiniz Komut
         msg.member.addRole("584373674514317333") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Sarı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renkmavi') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renkmavi') {  // İstediğiniz Komut
         msg.member.addRole("584376122725367818") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Mavi Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renkyeşil') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renkyeşil') {  // İstediğiniz Komut
         msg.member.addRole("584376202261692446") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Yeşil Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renkkırmızı') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renkkırmızı') {  // İstediğiniz Komut
         msg.member.addRole("584376215180148756") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Kırmızı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renkmor') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renkmor') {  // İstediğiniz Komut
         msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Mor Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
 client.on('message', msg => {
-   if (msg.content.toLowerCase() === '!renkpembe') {  // İstediğiniz Komut
+   if (msg.content.toLowerCase() === '/renkpembe') {  // İstediğiniz Komut
         msg.member.addRole("584377724278276108") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
      msg.reply('**Pembe Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
 
  const activities_list = [
-     "!dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
+     "/dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
      "Sergen Zorogluna Abone Olun", 
-     "!davet yazarak davet linki alabilirsiniz...", 
+     "/davet yazarak davet linki alabilirsiniz...", 
      "DETSU Klan ALımlarımız Oldumu Bilgilendirileceksiniz...",
      "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
      ];
@@ -289,7 +289,7 @@ client.on("message", message => {
 
    
     client.on('message', msg => {
-      if (msg.content.toLowerCase() === '!davet') {
+      if (msg.content.toLowerCase() === '/davet') {
       
         msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
