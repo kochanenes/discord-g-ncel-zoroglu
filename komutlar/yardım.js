@@ -34,7 +34,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'botyardım',
+  name: 'dyardım',
   description: 'Tüm komutları gösterir.',
   usage: 'yardım [komut]'
 };
