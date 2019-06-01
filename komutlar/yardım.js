@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
-var prefix = ayarlar.prefix;
+var prefix = ('!');
 
 exports.run = (client, message, params) => {
   const embedyardim = new Discord.RichEmbed()
