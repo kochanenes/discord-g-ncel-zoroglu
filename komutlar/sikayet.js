@@ -18,14 +18,14 @@ const embed2 = new Discord.RichEmbed()
 .addField(`Kulanıcı Bilgileri`, `Kullanıcı ID: ${message.author.id}\nKullanıcı Adı: ${message.author.username}\nKullanıcı Tagı: ${message.author.discriminator}`)
 .addField("Şikayet", type)
 .setThumbnail(message.author.avatarURL)
-client.channels.get('548969317472010240').send(embed2); // Kanal ID
+client.channels.get('584391302137774109').send(embed2); // Kanal ID
 
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['şikayet','sıkayet','şıkayet'],
   permLevel: 0
 };
 
