@@ -1,34 +1,34 @@
-const Discord = require("discord.js");
-var Jimp = require('jimp');
+const Discord = require(`discord.js`);
+const Jimp = require(`jimp`);
 
 exports.run = async (client, message, args) => {
-    var user = message.mentions.users.first() || message.author;
-    if (!message.guild) user = message.author;
+ let member = message.mentions.members.first();
+ var user = message.mentions.users.first() || message.author;
+  message.channel.send(`**Aranıyor** filtresi uygulanıyor.\n**işlem \`5\` saniye içerisinde gerçekleştirilecek.**`).then(m => m.delete(3000));
 
-    message.channel.send(`:timer: Bu Biraz zaman alabilir // Lütfen Bekleyin.`).then(m => m.delete(1000));
+  Jimp.read('ttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrevTbtXe93ry4I2SMuRUUqsmxJ8_ZfAae2_3mI_fOGou2fS59kg`, (err, image) => {
+    image.resize(295, 295)
 
-Jimp.read(user.avatarURL, (err, image) => {
-    image.resize(315, 310)
-    Jimp.read("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrevTbtXe93ry4I2SMuRUUqsmxJ8_ZfAae2_3mI_fOGou2fS59kg", (err, avatar) => {
-        avatar.resize(315, 320)
-        image.composite(avatar, 0, 0).write(`./img/snip/${client.user.id}-${user.id}.png`);
+    Jimp.read(user.avatarURL, (err, avatar) => {
+        avatar.resize(179, 135)
+        image.composite(avatar, 56, 100).write(`./img/araniyor/discord.gg/B2Vz2ug-${user.username}.png`);
         setTimeout(function() {
-            message.channel.send(new Discord.Attachment(`./img/snip/${client.user.id}-${user.id}.png`));
+            message.channel.send(new Discord.Attachment(`./img/araniyor/discord.gg/B2Vz2ug-${user.username}.png`));
+
         }, 1000);
+      });
     });
 
-});
-}
-
+};
 exports.conf = {
-    enabled: true,
-    guildOnly: false,
-    aliases: [],
-    permLevel: 0
-  };
+ enabled: true,
+ guildOnly: false,
+ aliases: ['aranıyor'],
+ permLevel: 0
+};
 
-  exports.help = {
-    name: 'hacked',
-    description:  'Hacked Efekti',
-    usage: 'hacked'
-  };
+exports.help = {
+ name: 'wanted',
+ description: 'wanted',
+ usage: 'wanted'
+};
