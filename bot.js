@@ -186,7 +186,7 @@ client.on('message', message => {
  });
 
  const activities_list = [
-     "!yardım", 
+     "!dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
      "Sergen Zorogluna Abone Olun", 
      "!davet yazarak davet linki alabilirsiniz...", 
      "DETSU Klan ALımlarımız Oldumu Bilgilendirileceksiniz...",
