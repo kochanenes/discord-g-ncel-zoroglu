@@ -25,7 +25,7 @@ client.channels.get('584391302137774109').send(embed2); // Kanal ID
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['şikayet','sikayetet','şikayet et'],
   permLevel: 0
 };
 
