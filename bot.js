@@ -191,6 +191,30 @@ client.on('message', message => {
      msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
    }
  });
+ client.on('message', msg => {
+   if (msg.content.toLowerCase() === '!renkmavi') {  // İstediğiniz Komut
+        msg.member.addRole("584376122725367818") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+   }
+ });
+ client.on('message', msg => {
+   if (msg.content.toLowerCase() === '!renkyeşil') {  // İstediğiniz Komut
+        msg.member.addRole("584376202261692446") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+   }
+ });
+ client.on('message', msg => {
+   if (msg.content.toLowerCase() === '!renkkırmızı') {  // İstediğiniz Komut
+        msg.member.addRole("584376215180148756") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+   }
+ });
+ client.on('message', msg => {
+   if (msg.content.toLowerCase() === '!renkmor') {  // İstediğiniz Komut
+        msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+   }
+ });
 
  const activities_list = [
      "!dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
