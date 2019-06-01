@@ -188,31 +188,37 @@ client.on('message', message => {
  client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renksarı') {  // İstediğiniz Komut
         msg.member.addRole("584373674514317333") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+     msg.reply('**Sarı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renkmavi') {  // İstediğiniz Komut
         msg.member.addRole("584376122725367818") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+     msg.reply('**Mavi Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renkyeşil') {  // İstediğiniz Komut
         msg.member.addRole("584376202261692446") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+     msg.reply('**Yeşil Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renkkırmızı') {  // İstediğiniz Komut
         msg.member.addRole("584376215180148756") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+     msg.reply('**Kırmızı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
  client.on('message', msg => {
    if (msg.content.toLowerCase() === '!renkmor') {  // İstediğiniz Komut
         msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('Sarı Rengini Başarıyla Aldın.'); //Komutu Yazınca cevap ne yazsın?
+     msg.reply('**Mor Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
+   }
+ });
+client.on('message', msg => {
+   if (msg.content.toLowerCase() === '!renkpembe') {  // İstediğiniz Komut
+        msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
+     msg.reply('**Pembe Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
    }
  });
 
