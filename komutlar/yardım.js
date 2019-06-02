@@ -13,7 +13,7 @@ exports.run = (client, message, params) => {
 .addField("**Renk Komutları**","**\n/renksarı = Sarı Renk Alırsınız...\n/renkmavi = Mavi Renk Alırsınız...\n/renkmor = Mor Renk Alırsınız...\n/renkkırmızı = Kırmızı Renk Alırsınız...\n/renkyeşil = Yeşil Renk Alırsınız...\n/renkpembe = Sarı Renk Alırsınız...\n**__**NOT:Renklerin Belirli Bir Sıralanması Vardır. : 1. Sarı 2. Kırmızı 3. Mavi 4. Yeşil 5. Mor 6. Pembe - NOT 2: En Fazla 1 Renk Alabilirsiniz Başka Renk İsterseniz Yazabilirsiniz Fakat Sıralamaya Göre Hareket Edin...**__")
   .addField("**Eğlence ve Kullanıcı Komutları:**", `\n/hackle = etiketlediğiniz kişiyi hackler...\n/havadurumu = Havadurumunu Gösterir (Kullanım /havadurumu <şehir>\n/balıktut = balıktutarsınız \n/çayiç = çay içersiniz... \n/roliste = rol verir :D yada oyle sanarsın :D \n/bilgi = Benim Hakkımda Bilgi Verir... \n/efkar-vs = 2 kullanıcı etiketleyip hangisi daha efkarlı test eder... \n/hacked = Profil resminize Hacked yazısını ekler... \n/kralol = Kral Olursunuz... \n/öldür = Etiketlediğiniz Kişiyi Öldürür... \n/tokat = etiketlediğiniz kişiye tokat atar...\n/espiri = random espiri yapar...\n/sor = sordugunuz soruya cevap verir...\n/öp = Etiketlediğin Kişiyi Öper...\n/aşkölçer = etiketledğiniz 2 kişinin arasındaki aşkı ölçer...\n/hapis = Profil resminize hapisdeymiş gibi hava katar...\n/tekme = etiketlediğiniz kişiye tekme atar...\n/wanted = kendinize veya etiketledğiniz kişiye Aranıyor havası katar... `)
   
-  .addField("**Yapımcı**", " __**Enes Reis**__ ")
+  .addField("**Yapımcı**", " __**Kochanenes**__ ")
   .setFooter('***************************************')
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
