@@ -14,7 +14,7 @@ exports.run = (client, message, params) => {
     .setAuthor(message.author.username + ' Bilgi Aldı')
     .setColor(3447003)
     .setTimestamp()
-    .setDescription('Ben Zoroglu BOT Beni Enes Kodladı Amacım Size Daha İyi Hizmet Verebilmek Ben Sizi Çok Seviyorum Umarım Sizde Beni Seversiniz :hearts:')
+    .setDescription('Ben DETSU BOT Beni Enes Kodladı Amacım Size Daha İyi Hizmet Verebilmek Ben Sizi Çok Seviyorum Umarım Sizde Beni Seversiniz :hearts:')
 
     return message.channel.sendEmbed(sunucubilgi);
     }
