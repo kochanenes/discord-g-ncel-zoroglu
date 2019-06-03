@@ -249,7 +249,7 @@ client.on("guildMemberAdd", member => {
 	
 	member.addRole(role); 
 	
-	channel.send(member + " **artık** +role+ **rolü ile aramızda**");
+	channel.send(member + " **artık** __**{0}**__ **rolü ile aramızda**",role);
 	
 	member.send("** Hoş Geldin! Artık Üye  rolüne sahipsin!**")
 	
