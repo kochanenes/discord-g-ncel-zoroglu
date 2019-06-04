@@ -9,7 +9,7 @@ new Discord.RichEmbed()
 const embed = new Discord.RichEmbed()
 .setColor('RANDOM')
 
-.setDescription('Şikayetiniz Bildirildi!')
+.setDescription('Şikayetiniz Bildirildi!'+message.author.username)
 message.delete();
 message.channel.send(embed)
 const embed2 = new Discord.RichEmbed()
