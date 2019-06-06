@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+/*const Discord = require('discord.js');
 const ayarlar = require('../ayarlar.json');
 
 var prefix = ayarlar.prefix;
@@ -39,4 +39,4 @@ exports.help = {
   name: 'dyardım',
   description: 'Tüm komutları gösterir.',
   usage: 'yardım [komut]'
-};
+};*/
