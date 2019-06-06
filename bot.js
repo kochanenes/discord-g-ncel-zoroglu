@@ -185,42 +185,7 @@ client.on('message', message => {
          }
  });
 
- client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renksarı') {  // İstediğiniz Komut
-        msg.member.addRole("584373674514317333") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Sarı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
- client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renkmavi') {  // İstediğiniz Komut
-        msg.member.addRole("584376122725367818") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Mavi Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
- client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renkyeşil') {  // İstediğiniz Komut
-        msg.member.addRole("584376202261692446") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Yeşil Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
- client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renkkırmızı') {  // İstediğiniz Komut
-        msg.member.addRole("584376215180148756") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Kırmızı Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
- client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renkmor') {  // İstediğiniz Komut
-        msg.member.addRole("584376198604259360") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Mor Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
-client.on('message', msg => {
-   if (msg.content.toLowerCase() === '/renkpembe') {  // İstediğiniz Komut
-        msg.member.addRole("584377724278276108") //Rolü bir yerde bahsedin sonra sağ tıklayıp İD'sini alın
-     msg.reply('**Pembe Rengini Başarıyla Aldın.**'); //Komutu Yazınca cevap ne yazsın?
-   }
- });
+ 
 
  const activities_list = [
      "/dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
@@ -301,54 +266,7 @@ client.on("message", message => {
    
  
   
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'amk') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'Ananı sikem') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'Ananı sikerim') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'amq') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'skm') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'piç') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'pic') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
-    client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'sikerim') {
-       msg.delete(30)
-        msg.reply('**Küfür Engellendi Küfür Etme Banlanırsın Kardeşim...** ``Uyarı``');
-      }
-    });﻿
+   
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
