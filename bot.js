@@ -400,7 +400,21 @@ if (msg.content === 'BY BY ') {
 }
 });
 
-
+client.on('message', msg => {
+if (msg.content === 'Sergen abi') {
+    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
+}
+});
+client.on('message', msg => {
+if (msg.content.toLowerCase() === 'sergen abi') {
+    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
+}
+});
+client.on('message', msg => {
+if (msg.content === 'SERGEN ABİ') {
+    msg.reply('__**Sergen Zoroglu Suan Müsait Değil Müsait Olunca Yazcağım İyi Oyunlar...**__');
+}
+});
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '!rol') {
