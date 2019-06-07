@@ -206,17 +206,17 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", member => {
 	
-	var channel = member.guild.channels.find("name", "gelen-giden");
+	var channel = member.guild.channels.find("name", "yeni-gelenler");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "Üye");
-	if (!role) return;
+	//var role = member.guild.roles.find("name", "Üye");
+	//if (!role) return;
 	
-	member.addRole(role); 
+	//member.addRole(role); 
 	
-	channel.send(member + " **artık** __**ÜYE**__ **rolü ile aramızda**");
+	channel.send(member + " **Aramıza Hoş Geldin Dostum...**");
 	
-	member.send("** Hoş Geldin! Artık Üye  rolüne sahipsin!**")
+	member.send("** Hoş Geldin! Artık Sende Bizim Ailemizdensin... :slight_smile: **")
 	
 });
 
