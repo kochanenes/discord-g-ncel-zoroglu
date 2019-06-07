@@ -191,7 +191,7 @@ client.on('message', message => {
      "/dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
      "Sergen Zorogluna Abone Olun", 
      "/davet yazarak davet linki alabilirsiniz...", 
-     "DETSU Klan ALımlarımız Oldumu Bilgilendirileceksiniz...",
+     "DETSU Klan Alımlarımız Oldumu Bilgilendirileceksiniz...",
      "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
      ];
 
