@@ -11,10 +11,10 @@ exports.run = (client, message, args) => {
   let guild = message.guild;
   let user = message.mentions.users.first();
   let reason = args.slice(1).join(' ');
-  if (reason.length < 1) return message.reply('Uyarı sebebini, belirtmelisiniz!');
-  if (message.mentions.users.size < 1) return message.reply('Kimi uyarmam gerekiyor?').catch(console.error);
+  if (reason.length < 1) return message.reply('**Uyarı sebebini, belirtmelisiniz!**');
+  if (message.mentions.users.size < 1) return message.reply('**Kimi uyarmam gerekiyor?**').catch(console.error);
   message.delete();
-  message.reply('Kişi Uyarıldı...!!!')
+  message.reply('**Kişi Uyarıldı...!!!**')
   const embed = new Discord.RichEmbed()
   .setColor('0x808080')
   .setTitle(`**DİKKAT ET COCUK ADAM..!!!**`)
