@@ -257,12 +257,7 @@ client.on("message", message => {
         msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
     });﻿
-  client.on('message', msg => {
-      if (msg.content.toLowerCase() === 'sergen abi') {
-      
-        msg.reply('__**Sergen Zoroglu Şuan Müsait Değil Daha Sonra Yaz...**__');
-      }
-    });﻿
+  
    
  
   
