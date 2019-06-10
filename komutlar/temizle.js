@@ -10,12 +10,12 @@ message.channel.bulkDelete(args[0]).then(() => {
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['sill'],
+  aliases: ['sill','sil'],
   permLevel: 2
 };
 
 exports.help = {
-  name: 'temizlee',
+  name: 'temizle',
   description: 'Belirlenen miktarda mesajı siler.',
   usage: 'temizlee <silinicek mesaj sayısı>'
 };
