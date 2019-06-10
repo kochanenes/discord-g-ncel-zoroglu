@@ -10,12 +10,12 @@ module.exports.run = async (bot, message, args) => {
     let reason = message.content.split(" ").slice(2).join(" ");
     if (!user.roles.find(`name`, "Susturulmuş")) return message.channel.sendEmbed(new Discord.RichEmbed().setColor('RANDOM').setTitle('Kişi Mutelenmemiş'))
     if (!reason) return message.channel.sendEmbed(new Discord.RichEmbed().setColor('RANDOM').setAuthor("Hata").setDescription(`Unmute Sebebini Yazmalısın`))
-    let muterole = message.guild.roles.find(`name`, "Susturulmuş");
+    let muterole = message.guild.roles.find(`name`, "Muted");
 
     if (!muterole) {
         try {
            muterole = await message.guild.createRole({
-                name: "Susturulmuş",
+                name: "Muted",
                 color: "#000000",
                 permissions: []
             })
