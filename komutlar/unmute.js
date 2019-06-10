@@ -44,7 +44,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 exports.conf = {
-    aliases: [],
+    aliases: ['susturkaldır','mutekaldır','mutedkaldır'],
     permLevel: 2
 };
 
