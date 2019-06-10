@@ -193,6 +193,7 @@ client.on('message', message => {
      "/davet yazarak davet linki alabilirsiniz...", 
      "DETSU Klan Alımlarımız Oldumu Bilgilendirileceksiniz...",
      "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
+	 "Made BY Kochanenes", 
      ];
 
  client.on('ready', () => {
