@@ -42,12 +42,12 @@ module.exports.run = async (bot, message, args) => {
 
 
 exports.conf = {
-    aliases: [],
+    aliases: ['mute','muted'],
     permLevel: 2
 };
 
 module.exports.help = {
-    name: "mute",
+    name: "sustur",
     description: "Etiketlenen Kişiye Mute Atar",
     usage: "mute [kullanıcı] [sebep]"
 }
