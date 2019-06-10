@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if (!message.member.hasPermissions ('KICK_MEMBERS')) return message.channel.send("**Komudu Kullanmak İçin Kick Members Yetkisine Sahip Olmalısın.**")
     const mod = message.author;
     let user = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if (!user) return message.channel.send(`**:kirmizi: Kullanıcıyı Bulamıyorum**`)
+    if (!user) return message.channel.send(`**:warning:  Kullanıcıyı Bulamıyorum**`)
     let reason = message.content.split(" ").slice(2).join(" ");
     if (!reason) return message.channel.sendEmbed(new Discord.RichEmbed().setAuthor('**Hata**').setDecription('**Mute Sebebini Yazman Gerek**').setColor('RANDOM'))
     let muterole = message.guild.roles.find(`name`, "Muted");
