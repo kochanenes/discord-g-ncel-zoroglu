@@ -3,7 +3,7 @@ const ms = require("ms")
 
 module.exports.run = async (bot, message, args) => {
 
-    if (!message.member.hasPermissions ('KICK_MEMBERS')) return message.channel.send("Yapmak İçin Kick Members Yetkisine Sahip Olmalısın.")
+    if (!message.member.hasPermissions ('MANAGE_ROLES')) return message.channel.send("Yapmak İçin MANAGE_ROLES Yetkisine Sahip Olmalısın.")
     const mod = message.author;
     let user = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if (!user) return message.channel.sendEmbed(new Discord.RichEmbed().setColor('RANDOM').setAuthor("Hata").setDescription(`**Kullanıcı Bulunamadı**`))
@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
 
 exports.conf = {
     aliases: ['susturkaldır','mutekaldır','mutedkaldır'],
-    permLevel: 2
+    permLevel: 0
 };
 
 exports.help = {
