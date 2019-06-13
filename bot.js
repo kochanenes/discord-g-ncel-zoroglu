@@ -263,7 +263,11 @@ client.on("message", message => {
  
   
    
-
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'ping') {
+      msg.reply('Ping : '+ client.ping+'ms');
+}
+});
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
       msg.reply('Aleyküm Selam ');
