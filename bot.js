@@ -260,7 +260,7 @@ client.on("message", message => {
     });﻿
   
    client.on('message', msg => {
-  if (msg.content.toLowerCase() === prefix + 'resmim') {
+  if (msg.content.toLowerCase() ===  '/resmim') {
       msg.reply(message.author.avatarURL);
 }
 });
