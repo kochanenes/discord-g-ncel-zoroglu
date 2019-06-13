@@ -259,9 +259,10 @@ client.on("message", message => {
       }
     });﻿
   
+
    client.on('message', msg => {
   if (msg.content.toLowerCase() ===  '/resmim') {
-      msg.reply(message.author.avatarURL);
+      message.channel.send(message.author.avatarURL);
 }
 });
  
