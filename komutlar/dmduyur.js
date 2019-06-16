@@ -36,7 +36,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'dmduyuru',
+  name: 'dmduyuruu',
   description: 'İstediğiniz şeyi bota duyurtur.',
   usage: 'duyuru [duyurmak istediğiniz şey]'
 };
