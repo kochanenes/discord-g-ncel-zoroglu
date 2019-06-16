@@ -217,7 +217,7 @@ client.on("guildMemberAdd", member => {
 	
 	channel.send(member + " **Aramıza Hoş Geldin Dostum...**");
 	
-	member.send("** Hoş Geldin! Artık Sende Bizim Ailemizdensin... :slight_smile: **")
+	member.send("** Hoş Geldin! Artık Sende Bizim Ailemizdensin... :slight_smile: \n Ufak Bir Soru Malatyalımısın Malatyalıysan Malatyalıyım Yazman Yeterlı Degılsen Yazmasanda Olur Malum Botumya :smile: **")
 	
 });
 
