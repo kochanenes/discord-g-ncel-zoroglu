@@ -13,11 +13,11 @@ exports.run = (client, message, args) => {
   let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
   if (reason.length < 1) return message.reply('**Ne göndericem onuda yazı ver.**');
-  if (message.mentions.users.size < 1) return message.reply('Kime Mesaj atacam onuda yazı ver.').catch(console.error);
+  if (message.mentions.users.size < 1) return message.reply('**Kime Mesaj atacam onuda yazı ver.**').catch(console.error);
   message.delete();
   message.delete();
-  message.reply('Mesajını Gönderdim Reis...')
- message.delete(30000);
+  message.reply('**Mesajını Gönderdim Reis...**')
+
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
   .setTitle(`**Reis Enes Apimden Mesaj Var...**`)
