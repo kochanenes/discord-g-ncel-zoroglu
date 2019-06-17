@@ -17,6 +17,7 @@ exports.run = (client, message, args) => {
   message.delete();
   message.delete();
   message.reply('Mesajını Gönderdim Reis...')
+ message.delete(30000);
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
   .setTitle(`**Reis Enes Apimden Mesaj Var...**`)
