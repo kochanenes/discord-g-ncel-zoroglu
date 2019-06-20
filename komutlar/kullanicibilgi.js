@@ -34,7 +34,7 @@ exports.run = (client, message, params) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['kullanıcı', 'kullanıcı bilgim', 'kbilgim'],
+  aliases: ['kullanıcı', 'kullanıcı bilgim', 'kbilgim','kişi-bilgi'],
   permLevel: 0
 };
 
