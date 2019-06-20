@@ -26,7 +26,7 @@ exports.run = (client, message, params) => {
       .addField('Şu an oynadığı oyun;', message.author.presence.game ? message.author.presence.game.name : 'Şu an oyun oynamamakta!')
       .setFooter('Yıkık, iyi eğlenceler diler!', client.user.avatarURL)
       console.log("/kullanıcı-bilgi komutu " + message.author.username + " tarafından kullanıldı.")
-      return message.channel.sendEmbed(mesajsilindi).then(msg => msg.delete(5000));
+      return message.channel.sendEmbed(mesajsilindi).then(msg => msg.delete(300000));
       return message.channel.sendEmbed(kullanicibilgimk)
   }
 };
