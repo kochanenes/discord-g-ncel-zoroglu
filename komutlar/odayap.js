@@ -18,7 +18,7 @@ errors: ['time'],
         message.guild.createChannel(`Rank_Sorgulama`);
         message.guild.createChannel(`Link-Paylaşım-Odası`);
         message.guild.createChannel(`Bot-Komut-Odası`);
-        
+        message.guild.createChannel('Counter Strike 1.6 -1','VOİCE');
       
        message.guild.deleteChannel();
         message.channel.send(`Odaları Oluşturdum Yetkileri Sen Ayarlarsın Başka İşim Varmı Reis...?`);
