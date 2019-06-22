@@ -194,7 +194,7 @@ client.on('message', message => {
      "DETSU Klan Alımlarımız Oldumu Bilgilendirileceksiniz...",
      "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
 	 "Made BY Kochanenes", 
-"/botdavet yazarak beni sunucunuza ekleyebilirsiniz...",
+
      ];
 
  client.on('ready', () => {
@@ -259,11 +259,6 @@ client.on("message", message => {
       }
     });
   
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === '/botdavet') {
-      msg.reply('**DETSU bot Davet Linki :** https://discordapp.com/oauth2/authorize?client_id=586653060852482069&scope=bot&permissions=8');
-}
-});
 
   
    
