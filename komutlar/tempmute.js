@@ -30,10 +30,10 @@ module.exports.run = async (bot, message, args) => {
   }
   //end of create role
   let mutetime = args[1];
-  if(!mutetime) return message.reply("**Lütfen Zaman Belirt...**\n**NOT: Zamanı 1 saat vereceksen eğer 36000000 Yap Şimdilik Böyle Ama Düzelteceğim**");
+  if(!mutetime) return message.reply("**Lütfen Zaman Belirt...**\n**NOT: 1saat vereceksen 1h , 1dakika vereceksen 1m, 1gün vereceksen 1d  yazman yeterli 1 yerine İstediğin Bir Değer Yazabilirsin... **");
 
   await(tomute.addRole(muterole.id));
-  message.reply(`<@${tomute.id}> has been muted for ${ms(ms(mutetime))}`);
+  message.reply(`<@${tomute.id}> **Adlı Kullanıcıya Mute Verildi Verilen Zaman :**  ${ms(ms(mutetime))}`);
 
   setTimeout(function(){
     tomute.removeRole(muterole.id);
