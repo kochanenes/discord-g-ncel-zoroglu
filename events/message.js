@@ -39,7 +39,7 @@ module.exports = message => {
     if (client.aliases.has(command)) {
       return false;
     } else {
-    message.channel.send(`Komutlarımda \`\`${command}\`\` adında bir komut bulamadım! Komut listesine bakmak için: \`\`${ayarlar.prefix}yardım\`\``)
+    message.channel.send(`**Komutlarımda** \`\`${command}\`\` **adında bir komut bulamadım! Komut listesine bakmak için:** \`\`${ayarlar.prefix}dyardım\`\``)
     }
   }
   
