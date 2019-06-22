@@ -255,10 +255,9 @@ client.on("message", message => {
    
     client.on('message', msg => {
       if (msg.content.toLowerCase() === '/davet') {
-      
         msg.reply('__**Discord Davet Linkimiz Budur = **__ https://discord.gg/9McNE3n __**Arkadaşlarını Bu Link den Davet Edebilirsin...**__');
       }
-    });﻿
+    });
   
 client.on('message', msg => {
   if (msg.content.toLowerCase() === '/botdavet') {
@@ -423,7 +422,7 @@ if (msg.content === 'SERGEN ABİ') {
 
 client.elevation = message => {
   if(!message.guild) {
-	return; };
+	return; }
   let permlvl = 0;
   if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
   if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
@@ -440,9 +439,5 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
-
-
-
-
 
 client.login(process.env.BOT_TOKEN);
