@@ -242,7 +242,7 @@ client.unload = command => {
 	};
 
 client.on("message", message => {
-    const dmchannel = client.channels.find("name", "dm-log");
+    const dmchannel = client.channels.find("name", "botmesaj");
     if (message.channel.type === "dm") {
         if (message.author.bot) return;
         dmchannel.sendMessage("", {embed: {
