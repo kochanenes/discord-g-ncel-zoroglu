@@ -188,11 +188,7 @@ client.on('message', message => {
  
 
  const activities_list = [
-     "/dyardım yazarak bot komutlarına ulaşabilirsiniz...", 
-     "Sergen Zorogluna Abone Olun", 
-     "/davet yazarak davet linki alabilirsiniz...", 
-     "DETSU Klan Alımlarımız Oldumu Bilgilendirileceksiniz...",
-     "Sergen Zoroglu Kanalında Yeni Video Yayında :)", 
+ 
 	 "Made BY Kochanenes", 
 
      ];
